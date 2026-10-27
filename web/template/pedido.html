@@ -1,0 +1,29 @@
+<!-- Tela de novo pedido: cliente + itens dinâmicos (FormArray) + resumo (OrderForm) -->
+<main class="main">
+  <div class="top"><h1>Novo pedido de venda</h1><button class="btn ghost" type="button">Voltar para pedidos</button></div>
+  <div class="row">
+    <section class="card grow">
+      <label>Cliente
+        <select><option>Selecione o cliente</option><option>Ana Souza</option><option>Bruno Lima</option></select>
+      </label>
+      <h2>Itens do pedido</h2>
+      <!-- repetir este bloco com *ngFor sobre o FormArray -->
+      <div class="item">
+        <label>Produto
+          <select><option>Camiseta básica</option><option>Caneca de cerâmica</option></select>
+        </label>
+        <label class="q">Qtd<input type="number" value="1" min="1"></label>
+        <button class="btn ghost" type="button">Remover</button>
+      </div>
+      <div class="acts"><button class="btn ghost" type="button">Adicionar produto</button></div>
+    </section>
+    <section class="card side-card">
+      <h2>Resumo</h2>
+      <div class="sum"><span>Cliente</span><span>Ana Souza</span></div>
+      <div class="sum"><span>1 x Camiseta básica</span><span>R$ 59,90</span></div>
+      <div class="sum"><span>Total</span><span class="tot">R$ 59,90</span></div>
+      <p class="msg">Todo pedido precisa de 1 cliente e pelo menos 1 produto.</p>
+      <div class="acts"><button class="btn" type="button">Finalizar pedido</button></div>
+    </section>
+  </div>
+</main>

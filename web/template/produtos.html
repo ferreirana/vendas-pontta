@@ -1,0 +1,32 @@
+<!-- Tela de produtos: lista com busca + formulário (ProductList / ProductForm) -->
+<main class="main">
+  <div class="top"><h1>Produtos</h1><button class="btn" type="button">Novo produto</button></div>
+  <div class="row">
+    <section class="card grow">
+      <label>Buscar por nome<input type="search" placeholder="Digite o nome do produto"></label>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Nome</th><th>SKU</th><th>Preço</th><th>Ações</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Camiseta básica</td><td>CAM-001</td><td>R$ 59,90</td>
+              <td><a class="lnk" href="#">Editar</a><a class="lnk" href="#">Excluir</a></td>
+            </tr>
+            <tr>
+              <td>Caneca de cerâmica</td><td>CAN-002</td><td>R$ 34,50</td>
+              <td><a class="lnk" href="#">Editar</a><a class="lnk" href="#">Excluir</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="msg">Produto em uso em um pedido não pode ser removido.</p>
+    </section>
+    <section class="card side-card">
+      <h2>Novo produto</h2>
+      <label>Nome<input type="text" placeholder="Nome do produto"></label>
+      <label>SKU<input type="text" placeholder="Código"></label>
+      <label>Preço (R$)<input class="bad" type="text" value="0,00"><span class="msg">O preço deve ser maior que zero</span></label>
+      <div class="acts"><button class="btn" type="button">Salvar</button><button class="btn ghost" type="button">Cancelar</button></div>
+    </section>
+  </div>
+</main>

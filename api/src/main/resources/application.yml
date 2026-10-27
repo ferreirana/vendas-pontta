@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    # Usa a variável de ambiente se existir; senão, o valor padrão (máquina local)
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/vendas}
+    username: ${SPRING_DATASOURCE_USERNAME:vendas}
+    password: ${SPRING_DATASOURCE_PASSWORD:vendas}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false

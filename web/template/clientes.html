@@ -1,0 +1,31 @@
+<!-- Tela de clientes: lista com busca + formulário (CustomerList / CustomerForm) -->
+<main class="main">
+  <div class="top"><h1>Clientes</h1><button class="btn" type="button">Novo cliente</button></div>
+  <div class="row">
+    <section class="card grow">
+      <label>Buscar por nome<input type="search" placeholder="Digite o nome do cliente"></label>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Ações</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Ana Souza</td><td>ana@exemplo.com</td><td>(17) 90000-0001</td>
+              <td><a class="lnk" href="#">Editar</a><a class="lnk" href="#">Excluir</a></td>
+            </tr>
+            <tr>
+              <td>Bruno Lima</td><td>bruno@exemplo.com</td><td>(17) 90000-0002</td>
+              <td><a class="lnk" href="#">Editar</a><a class="lnk" href="#">Excluir</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="card side-card">
+      <h2>Novo cliente</h2>
+      <label>Nome<input type="text" placeholder="Nome completo"></label>
+      <label>E-mail<input class="bad" type="email" value="diego@exemplo"><span class="msg">E-mail inválido</span></label>
+      <label>Telefone<input type="tel" placeholder="(00) 00000-0000"></label>
+      <div class="acts"><button class="btn" type="button">Salvar</button><button class="btn ghost" type="button">Cancelar</button></div>
+    </section>
+  </div>
+</main>
