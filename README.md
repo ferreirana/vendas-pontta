@@ -64,8 +64,13 @@ Os testes usam banco H2 em memória, então não precisam do PostgreSQL no ar.
 
 ## Decisões
 
-(preencher no fim)
+CRUD simples, apenas de clientes
 
 ## O que ficou de fora
 
-(preencher no fim)
+CRUD - produtos e integração produto + cliente
+
+## Dificuldades
+
+Resolver os problemas de sintaxe do Angular, como não tenho tanto conhecimento de Angular, acredito que foi a maior dificuldade.
+Lógica no front ainda é um ponto de dificuldade. 
