@@ -1,2 +1,9 @@
-<app-ping />
-<router-outlet />
+<div class="app">
+  <nav class="side">
+    <p class="brand">Vendas</p>
+    <a class="nav" routerLink="/customers" routerLinkActive="on">Clientes</a>
+    <a class="nav" routerLink="/products" routerLinkActive="on">Produtos</a>
+    <a class="nav" routerLink="/orders" routerLinkActive="on">Pedidos de venda</a>
+  </nav>
+  <router-outlet />
+</div>
